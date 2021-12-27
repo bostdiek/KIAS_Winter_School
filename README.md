@@ -13,3 +13,51 @@ To quit the notebooks, select `File > Shutdown` or hit `Control + C` in the term
 To download the turorials, use
 ```git clone https://github.com/bostdiek/KIAS_Winter_School.git```.
 Then move into that directory and launch the notebooks: `docker run -p 8888:8888 -it -v $PWD:$PWD -w $PWD -e JUPYTER_ENABLE_LAB=yes bostdiek/kias_ws`
+
+## Repository Structure
+```
+├── Dockerfile
+├── LICENSE
+├── README.md
+├── data
+│   ├── top_tagging
+│   │   ├── raw
+│   │   │   ├── test.h5
+│   │   │   ├── train.h5
+│   │   │   └── val.h5
+│   │   └── smaller_raw
+│   │       ├── nsubjettiness_test.npy
+│   │       ├── nsubjettiness_training.npy
+│   │       ├── nsubjettiness_val.npy
+│   │       ├── test_events.npy
+│   │       ├── test_images.npy
+│   │       ├── test_labels.npy
+│   │       ├── training_events.npy
+│   │       ├── training_images.npy
+│   │       ├── training_labels.npy
+│   │       ├── val_events.npy
+│   │       ├── val_images.npy
+│   │       └── val_labels.npy
+│   ├── tutorial_1_data
+│   │   ├── linear_regression_curved_test.npy
+│   │   ├── linear_regression_curved_training.npy
+│   │   ├── linear_testing.npy
+│   │   ├── linear_training.npy
+│   │   ├── logistic_regression_testing.npy
+│   │   ├── logistic_regression_training.npy
+│   │   └── logistic_regression_validation.npy
+│   └── tutorial_2_data
+│       ├── gluons.csv
+│       └── quarks.csv
+├── requirements.txt
+├── slides
+│   ├── KIAS_Ostdiek_MachineLearning_1.key
+│   └── KIAS_Ostdiek_MachineLearning_2.key
+└── tutorials
+    ├── Tutorial1.ipynb
+    ├── Tutorial1_Answers.ipynb
+    ├── Tutorial2.ipynb
+    ├── Tutorial2_Answers.ipynb
+    ├── Tutorial3_0_TopTagging_ProcessRawData.ipynb
+    └── Tutorial3_1_TopTagging_Visualizations.ipynb
+```
