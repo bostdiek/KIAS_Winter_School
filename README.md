@@ -52,7 +52,11 @@ Then move into that directory and launch the notebooks: `docker run -p 8888:8888
 ├── requirements.txt
 ├── slides
 │   ├── KIAS_Ostdiek_MachineLearning_1.key
-│   └── KIAS_Ostdiek_MachineLearning_2.key
+│   ├── KIAS_Ostdiek_MachineLearning_1.pdf
+│   ├── KIAS_Ostdiek_MachineLearning_2.key
+│   ├── KIAS_Ostdiek_MachineLearning_2.pdf
+│   ├── KIAS_Ostdiek_MachineLearning_3.key
+│   └── KIAS_Ostdiek_MachineLearning_3.pdf
 └── tutorials
     ├── Tutorial1.ipynb
     ├── Tutorial1_Answers.ipynb
